@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <title>Rubens Programming Career</title>
+</head>
+<body>
+    <button onclick="ScrollToTop()" class="ScrollToTopButton"><span>Scroll to top</span></button>
+
+    <div class="main1" id="main">
+        <section class="section100 parallax image8">
+            <!--De drie css elements die zorgen dat de parallax gemaakt wordt. In de eerste staan dingen als text en kleur en de laaste is het image element. -->
+            <div>
+                <h1>Rubens Programming Career</h1>
+            </div>
+        </section>
+        <section class="section1 static" style="height:80vh;">
+            <h2>My Projects</h2>
+            <center>
+                <h3>
+                    In this page you can find 8 of my projects and play them.
+                </h3>
+                <h1>Menu</h1>
+                <a href="Index.html"><button style="height: 10vh; width: 30vh;  "><h3>Home</h3></button></a>
+                <a href="AllProjects.html"><button style="height: 10vh; width: 30vh;"><h3>My Projects</h3></button></a>
+                <a href="AboutMe.html"><button style="height: 10vh; width: 30vh;"><h4>About Me</h></button></a><br />
+                <a href="AboutC%23.html"><button style="height: 7.5vh; width: 22.5vh;"><h3 style="font-size: 1.75vh;">About C#</h3></button></a>
+                <a href="AboutUnity.html"><button style="height: 7.5vh; width: 22.5vh;"><h3 style="font-size: 1.75vh;">About Unity</h3></button></a>
+            </center>
+        </section>
+        <div class="containerSlideshow">
+
+            <div class="Slide fade">
+                <div class="numberSlide">1 / 8</div><!--de nummer op waar die tevoorschijn komt-->
+                <img onclick="showSlideShow()" src="SlideShow1.png" style="height: 75vh; cursor: pointer; ">
+                <div class="CapText">Felix Monster Level</div><!--de text eronder-->
+            </div>
+            <div class="Slide fade">
+                <div class="numberSlide">2 / 8</div><!--de nummer op waar die tevoorschijn komt-->
+                <img onclick="showSlideShow()" src="SlideShow2.png" style="height: 75vh; cursor: pointer;">
+                <div class="CapText">Don't Touch The Arrows</div><!--de text eronder-->
+            </div>
+            <div class="Slide fade">
+                <div class="numberSlide">3 / 8</div><!--de nummer op waar die tevoorschijn komt-->
+                <img onclick="showSlideShow()" src="SlideShow3.png" style="height: 75vh; cursor: pointer;">
+                <div class="CapText">TANK</div><!--de text eronder-->
+            </div>
+            <div class="Slide fade">
+                <div class="numberSlide">4 / 8</div><!--de nummer op waar die tevoorschijn komt-->
+                <img onclick="showSlideShow()" src="SlideShow4.png" style="height: 75vh; cursor: pointer;">
+                <div class="CapText">Felix Flight Adventure</div><!--de text eronder-->
+            </div>
+            <div class="Slide fade">
+                <div class="numberSlide">5 / 8</div><!--de nummer op waar die tevoorschijn komt-->
+                <img onclick="showSlideShow()" src="SlideShow5.png" style="height: 75vh; cursor: pointer;">
+                <div class="CapText">Pixel Fight</div><!--de text eronder-->
+            </div>
+            <div class="Slide fade">
+                <div class="numberSlide">6 / 8</div><!--de nummer op waar die tevoorschijn komt-->
+                <img onclick="showSlideShow()" src="SlideShow6.png" style="height: 75vh; cursor: pointer;">
+                <div class="CapText">Burger Clicker 2</div><!--de text eronder-->
+            </div>
+            <div class="Slide fade">
+                <div class="numberSlide">7 / 8</div><!--de nummer op waar die tevoorschijn komt-->
+                <img onclick="showSlideShow()" src="SlideShow7.png" style="height: 75vh; cursor: pointer;">
+                <div class="CapText">JrJoness</div><!--de text eronder-->
+            </div>
+            <div class="Slide fade">
+                <div class="numberSlide">8 / 8</div><!--de nummer op waar die tevoorschijn komt-->
+                <img onclick="showSlideShow()" src="SlideShow11.png" style="height: 75vh; cursor: pointer;">
+                <div class="CapText">OrangeSquare</div><!--de text eronder-->
+            </div>
+            <!-- Knoppen -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a><!--Het symbool voor vorige en volgende zijn de tekens in de a-->
+            <a class="next" onclick="plusSlides(1)">&#10095;</a><br />
+
+            <!-- De cirkels -->
+            <div style="text-align:center">
+                <!--de hoeveelheid puntjes-->
+                <span class="dot" onclick="CurrentSlide(1)"></span>
+                <span class="dot" onclick="CurrentSlide(2)"></span>
+                <span class="dot" onclick="CurrentSlide(3)"></span>
+                <span class="dot" onclick="CurrentSlide(4)"></span>
+                <span class="dot" onclick="CurrentSlide(5)"></span>
+                <span class="dot" onclick="CurrentSlide(6)"></span>
+                <span class="dot" onclick="CurrentSlide(7)"></span>
+                <span class="dot" onclick="CurrentSlide(8)"></span>
+
+            </div>
+
+        </div>
+        <section class="section1 static" style="height:120vh;">
+
+            <center>
+                <div id="SlideShow1">
+                    <iframe src="https://scratch.mit.edu/projects/135685338/embed" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen style=" padding-right:10px; height: 65vh;width:77.5vh;"></iframe>
+                    <h3>Made in January 2017 Felix monster level is the first game I have ever made. It was made for an Informatics assignment and I got addicted in Scratch afterwards (making over twenty scratch games.)</h3>
+                </div>
+                <div id="SlideShow2">
+                    <iframe src="https://scratch.mit.edu/projects/140366459/embed" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen style=" padding-right:10px; height: 65vh;width:77.5vh;"></iframe>
+                    <h3>Don't touch the arrows is the second game I made and has (just like Felix monster level) very bad physics, graphics and player controller. But the concept of this game is what inspired JrJones. </h3>
+                </div>
+                <div id="SlideShow3">
+                    <iframe src="https://scratch.mit.edu/projects/143135099/embed" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen style=" padding-right:10px; height: 65vh;width:77.5vh;"></iframe>
+                    <h3>TANK was originally going to be a .io game but this of course is very hard, especially in scratch. I was actually very proud of the boss fight at the end of the game. I was also planning on making a second level but stopped halfway through. </h3>
+                </div>
+                <div id="SlideShow4">
+                    <iframe src="https://scratch.mit.edu/projects/249393447/embed" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen style=" padding-right:10px; height: 65vh;width:77.5vh;"></iframe>
+                    <h3>⠀⠀⠀⠀⠀⠀⠀⠀In this game Felix goes on an adventure once again. This time flying and beating a boss who is inspired by Cuphead's <a href="https://www.google.com/search?q=cuphead+wally+warbles&tbm=isch&ved=2ahUKEwiJguj8pv7tAhWxwQIHHXwgDekQ2-cCegQIABAA&oq=Cuphead+Wally+Wa&gs_lcp=CgNpbWcQARgAMgQIABATMgQIABATMgQIABATMgQIABATMgQIABATMgQIABATMggIABAFEB4QEzIICAAQCBAeEBMyCAgAEAgQHhATOgQIIxAnOgIIADoECAAQHjoHCCMQ6gIQJzoHCAAQsQMQQzoECAAQQzoFCAAQsQM6BggAEB4QE1C_IljDYWCdc2gTcAB4AoAB7guIAfwckgEMMTEuOC4xLjEuOC0xmAEAoAEBqgELZ3dzLXdpei1pbWewAQrAAQE&sclient=img&ei=jfTwX8mHNrGDi-gP_MC0yA4&bih=610&biw=1280">Wally Warbles.</a>⠀⠀⠀⠀⠀⠀⠀ ⠀⠀</h3>
+                </div>
+                <div id="SlideShow5">
+                    <iframe src="https://scratch.mit.edu/projects/267307869/embed" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen style=" padding-right:10px; height: 65vh;width:77.5vh;"></iframe>
+                    <h3>Pixel Fight is a singe player and two player game made for a Game Jam. This would be one of the last games I made in scratch because I wanted to make better quality games and I couldn't really do this in scratch.</h3>
+                </div>
+                <div id="SlideShow6">
+                    <iframe allowfullscreen=true webkitallowfullscreen=true mozallowfullscreen=true src="https://rubenbartelet.github.io/BurgerClicker/BurgerCLicker2.1.html#" style=" height: 66vh;width:88vh;"></iframe>
+                    <h3>Burger Clicker 2 is the first game I made outside scratch and was the sequel to Burger Clicker, a game I made in scratch a few months earlier. I unfortunately made nothing for a long time after I made this game. </h3>
+                </div>
+                <div id="SlideShow7">
+                    <iframe id="JrJonesGame" style="width: 160vh; height:97.5vh;" allowfullscreen=true webkitallowfullscreen=true mozallowfullscreen=true src="https://duoforcegames.github.io/JrJones/index.html"></iframe>
+                    <h3>JrJones is the biggest and only good game I made. It is the game where I learned to use Unity and C#. In this version (0.15) the game is almost done and only a few things need to be added. We want to add an online leaderboard, multiplayer and loads of other skins. But once this game is finally finished, after one and a half years, 2 thousand lines of code and hundreds of hours of work, we want to make a game that is way bigger than this one.</h3>
+                </div>
+                <div id="SlideShow8">
+                    <iframe style="display: block; width: 161.5vh; height:36vh;" allowfullscreen=true webkitallowfullscreen=true mozallowfullscreen=true src="https://rubenbartelet.github.io/PlatformerController/PlatformerController.html"></iframe>
+                    <h3>Orange Square is a JavaScript game I recently made in a couple of hours. It can't really be called a game because there is no winning or losing or an objective, but it was a bit hard to make because it is very different from the way you would make this in Unity. Because in Unity you give an object a component that for example makes them solid. JavaScript isn't a game-engine so that kind of things don't exist. Instead, you have to code all the physics and collision yourself. My target of making this game was to see how things would work outside Unity. </h3>
+                </div>
+                <div id="DefaultText">
+                    <h3>
+                        Click on the game in the slideshow to play it.
+                    </h3>
+                    <h3>
+                        You can check all my scratch games <a href="https://scratch.mit.edu/users/Ruben6445/projects/">here</a> and the first (published) version of JrJones <a href="https://duoforcegames.github.io/JrJones0.1/">here</a>. 
+                    </h3>
+                    <h3>
+                        <a href="http://github.com/RubenBartelet">The link to my GitHub Page</a> and <a href="https://github.com/DuoForceGames">the link to the DuoForce Games GitHub page</a>.
+                    </h3>
+                    <h3>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀ ⠀⠀⠀⠀ ⠀⠀⠀⠀</h3><!--onzichtbare characters om het 100 vw te maken-->
+
+                </div>
+            </center>
+
+        </section>
+        <section class="sectionFooter static">
+            <h1>©Ruben Bartelet 2013-2020</h1>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</body>
+</html>
