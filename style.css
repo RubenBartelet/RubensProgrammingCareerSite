@@ -1,4 +1,4 @@
-﻿body {
+body {
     overflow-y: hidden; /*zorgt ervoor dat je geen tweede scroll bar hebt*/
     background-color: black;
     
@@ -59,51 +59,11 @@
 }
 
 .image1::after { /*het image element. After omdat het een kind is van het section element*/
-    background-image: url("Photo3.jpeg");
+    background-image: url("ProfielFoto.jpg");
+    width: 100%;
     background-repeat: no-repeat;
 }
 
-.image2::after {
-    background-image: url("LegoLeague.JPG");
-    background-repeat: no-repeat;
-}
-.image3::after {
-    background-image: url("TankGamePlay4.gif");
-    background-repeat: no-repeat;
-}
-.image4::after {
-    background-image: url("yellow2.jpg");
-    background-repeat: no-repeat;
-    z-index: 0; /*zorgt dat het voor dani's foto zit*/
-}
-.image5{
-   width: 10%;
-}
-.image6::after {
-    background-image: url("JrJonesGamePlayGif.gif");
-    background-repeat: no-repeat;
-    z-index: -1; /*zorgt dat het voor dani's foto zit*/
-}
-.image9::after {
-    background-image: url("Trumpet3.jpg");
-    background-repeat: no-repeat;
-}
-.image8::after {
-    background-image: url("Photo1.jpeg");
-    background-repeat: no-repeat;
-}
-
-.image7::after { /*het image element. After omdat het een kind is van het section element*/
-    background-image: url("https://gamingstreet.com/wp-content/uploads/2019/10/unity.jpg ");
-}
-.ScrollToTopButton {
-    position: fixed;
-    bottom: 2%;
-    right: 3%;
-    z-index: 100;
-    height: 5vh;
-    width: 20vh;
-}
 span, p{
     font-size: 2.5vh;
     text-align: center;
@@ -135,21 +95,7 @@ h1 {
     z-index: 1;
     font-size: 5vh;
 }
-.spanh4 {
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-weight: 100;
-    font-size: 2.5vh;
-}
-.LLImage {
-    width: 10%;
-    height: auto;
-    float: left;
-}
-.FelixImage {
-    width: 10vw;
-    height: auto;
-    float: right;
-}
+
 button {
     background-color: black;
     border-radius: 3px;
@@ -168,116 +114,5 @@ button {
         border: 2px solid white;
     }
 
-a {
-    color: blue;
-    text-decoration: underline;
-    cursor: pointer;
-}
 
-/*↓ slideshow in css ↓*/
-* {
-    box-sizing: border-box
-}
 
-/* container van de slideshow*/
-.containerSlideshow {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
-
-/* Default is onzichtbaar */
-.Slide {
-    display: none;
-    text-align: center;/*zorgt dat hij altijd in het midden komt*/
-
-}
-/* volgende en vorige knoppen */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 10%;
-    user-select: none;
-    text-decoration: none;
-}
-/* Zorgt dat next rechts is (en prev links) */
-.next {
-    right: 0;
-    border-radius: 10%;
-}
-/* css voor button opmaak */
-.prev:hover, .next:hover {
-  background-color: rgba(255,255,255,0.5);
-}
-
-/* Caption text*/
-.CapText {
-    color: white;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8%;
-    width: 100%;
-    text-align: center;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-weight: 100;
-    font-size: 2.95vh;
-}
-/* Number text (1/8) */
-.numberSlide {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-.dot {
-
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #fff;
-    border-radius: 50%;/*zo zijn ze rond*/
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-.active, .dot:hover {/*als ze actief zijn wordt deze kleur*/
-    background-color: #717171;
-}
-
-/* Fading animatie */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 2s;
-    animation-name: fade;
-    animation-duration: 2s;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}

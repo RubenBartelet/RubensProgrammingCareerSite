@@ -1,0 +1,290 @@
+body {
+    overflow-y: hidden; /*zorgt ervoor dat je geen tweede scroll bar hebt*/
+    background-color: black;
+    
+}
+.main1 {
+    position: absolute;/*zorgt dat hij helemaal in de hoek geplaats wordt.*/
+    right:0;
+    top:0;
+    height: 100vh; /*de hoogte*/
+    overflow-x: hidden; /*Je kan niet scrollen op de xas*/
+    overflow-y: auto; /*Je kan wel scrollen op de y-as */
+    perspective: 2px; /*de perspectief*/
+}
+
+.section100 {
+    position: relative; /*dit element is de ouder van de parallax en image elements dus moet hij een relatieve positie hebben*/
+    height: 100vh; /*De hoogte van een section. Moet even groot zijn als de height van main1*/
+    display: flex; /*alle text dingen*/
+    justify-content: center;
+
+    align-items: center;
+    color: white;
+    text-shadow: 0 0 5px #000; /*schaduw*/
+}
+.section1{
+    padding-top: 2vh;
+    position: relative;
+    padding-left: 2.5vh;
+    padding-right: 2.5vh;
+    height: 100vh;
+    color: white;
+    text-shadow: 0 0 5px #000;
+}
+
+.sectionFooter { /*section voor de niet parallax elements. Deze heeft geen align-items:center;*/
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    height: 10vh;/*10*/
+    color: white;
+    text-shadow: 0 0 5px #000;
+}
+.parallax::after { /*de ::after is een pseudo-element*/
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(1.5); /*dit zorgt voor de scrolling parralax. De scale is hoe de schaal van de afbeelding*/
+    background-size: 100%; /*De afbeelding is op ware grote. Verander de afbeeldings grote in scale*/
+    z-index: -1; /*zorgt dat het op de achtergrond blijft*/
+}
+.static {/*de statische elementen blijven stil staan en hebben dus geen parallax*/
+    background: black;
+    z-index: 1;/*Zorght dat het op de voorgrond blijft.*/
+}
+
+.image1::after { /*het image element. After omdat het een kind is van het section element*/
+    background-image: url("Photo3.jpeg");
+    background-repeat: no-repeat;
+}
+
+.image2::after {
+    background-image: url("LegoLeague.JPG");
+    background-repeat: no-repeat;
+}
+.image3::after {
+    background-image: url("TankGamePlay4.gif");
+    background-repeat: no-repeat;
+}
+.image4::after {
+    background-image: url("yellow2.jpg");
+    background-repeat: no-repeat;
+    z-index: 0; /*zorgt dat het voor dani's foto zit*/
+}
+.image5{
+   width: 10%;
+}
+.image6::after {
+    background-image: url("JrJonesGamePlayGif.gif");
+    background-repeat: no-repeat;
+    z-index: -1; /*zorgt dat het voor dani's foto zit*/
+}
+.image9::after {
+    background-image: url("Trumpet3.jpg");
+    background-repeat: no-repeat;
+}
+.image8::after {
+    background-image: url("Photo1.jpeg");
+    background-repeat: no-repeat;
+}
+
+.image7::after { /*het image element. After omdat het een kind is van het section element*/
+    background-image: url("https://gamingstreet.com/wp-content/uploads/2019/10/unity.jpg ");
+}
+
+.image10::after { /*het image element. After omdat het een kind is van het section element*/
+    background-image: url("ProfielFoto.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.ScrollToTopButton {
+    position: fixed;
+    bottom: 2%;
+    right: 3%;
+    z-index: 100;
+    height: 5vh;
+    width: 20vh;
+}
+span, p{
+    font-size: 2.5vh;
+    text-align: center;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 100;
+}
+
+
+h2 { /*voor alle chapter titels in de site*/
+    font-size: 7.5vh;
+    text-align: center;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 100;
+}
+h3 { /*voor alle chapter titels in de site*/
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 2.95vh; 
+}
+h4 { 
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 2.5vh;
+}
+h1 {
+    text-align: center;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    z-index: 1;
+    font-size: 5vh;
+}
+.spanh4 {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 2.5vh;
+}
+.LLImage {
+    width: 10%;
+    height: auto;
+    float: left;
+}
+.FelixImage {
+    width: 10vw;
+    height: auto;
+    float: right;
+}
+button {
+    background-color: black;
+    border-radius: 3px;
+    color: white;
+    display: inline-block;
+    border: 0.25vh solid white;
+    transition: 0.3s;
+    margin:2vh;
+    cursor: pointer;
+}
+    button:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        background-color: white;
+        color: black;
+        display: inline-block;
+        border: 2px solid white;
+    }
+
+a {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*↓ slideshow in css ↓*/
+* {
+    box-sizing: border-box
+}
+
+/* container van de slideshow*/
+.containerSlideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Default is onzichtbaar */
+.Slide {
+    display: none;
+    text-align: center;/*zorgt dat hij altijd in het midden komt*/
+
+}
+/* volgende en vorige knoppen */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 10%;
+    user-select: none;
+    text-decoration: none;
+}
+/* Zorgt dat next rechts is (en prev links) */
+.next {
+    right: 0;
+    border-radius: 10%;
+}
+/* css voor button opmaak */
+.prev:hover, .next:hover {
+  background-color: rgba(255,255,255,0.5);
+}
+
+/* Caption text*/
+.CapText {
+    color: white;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8%;
+    width: 100%;
+    text-align: center;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 2.95vh;
+}
+/* Number text (1/8) */
+.numberSlide {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot {
+
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #fff;
+    border-radius: 50%;/*zo zijn ze rond*/
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {/*als ze actief zijn wordt deze kleur*/
+    background-color: #717171;
+}
+
+/* Fading animatie */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
